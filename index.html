@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewPass Version 1.0</title>
+  </head>
+  <h1>NewPass Version 1.0</h1>
+  <body style="background-color: black; color: white">
+    <div class="tool-container">
+      <input
+        type="text"
+        value="Click Generate Password"
+        id="passwordField"
+        name="passwordField"
+        autofocus
+      />
+      <br />
+      <input type="range" min="8" max="128" value="64" class="slider" />
+      <input
+        maxlength="3"
+        class="lengthnumber"
+        type="number"
+        style="width: 30px; height: 16px; resize: none; overflow: auto"
+      />
+
+      <br />
+      <label
+        ><input
+          type="checkbox"
+          name="numbers"
+          id="numbers"
+          checked
+        />Numbers</label
+      >
+      <label
+        ><input
+          type="checkbox"
+          name="lowercase"
+          id="lowercase"
+          checked
+        />Lowercase Letters</label
+      >
+      <label
+        ><input
+          type="checkbox"
+          name="uppercase"
+          id="uppercase"
+          checked
+        />Uppercase Letters</label
+      >
+      <label
+        ><input
+          type="checkbox"
+          name="symbols"
+          id="symbols"
+          checked
+        />Symbols</label
+      >
+      <br />
+      <button class="generate">Generate Password</button>
+      <button class="copy">Copy Password</button>
+      <button class="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <style>
+    h1 {
+      margin: 0;
+      padding: 0 0 5px 0;
+    }
+    body {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</html>
